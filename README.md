@@ -3,7 +3,7 @@ Task Manager Application
 
 En este aplicacion se permite el poder agregar tareas con su descripcion, una fecha y si se a completado, asi como poder eliminarla, actualizarla y consultarla.
 
-1.- Instalación y Apertura de la actividad:Descargar desde el github 
+1.- Instalación y Apertura de la actividad:Descargar desde el github o sincronizar con el branch de main1
 
 2.- Configuración y Compilación (Build):Una vez abierto el proyecto, Android Studio necesita descargar las dependencias y configurar el entorno.
 
