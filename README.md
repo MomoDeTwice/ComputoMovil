@@ -3,9 +3,12 @@ Task Manager Application
 
 En este aplicacion se permite el poder agregar tareas con su descripcion, una fecha y si se a completado, asi como poder eliminarla, actualizarla y consultarla.
 
-1.- Instalación y Apertura de la actividad:Descargar desde el github
+1.- Instalación y Apertura de la actividad:Descargar desde el github 
+
 2.- Configuración y Compilación (Build):Una vez abierto el proyecto, Android Studio necesita descargar las dependencias y configurar el entorno.
+
 3.- Ejecución de la Aplicación: Seleccionar un dispositivo donde emulara y ejecutar el programa.
+
 4.- Al usar la aplicación le permitira ver, editar, eliminar y agregar tareas nuevas
 
 CREATE TABLE tasks (
