@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">CursoAndroid2025G4</string>
-    <string name="tvHelloWorldText">Hello World!</string>
     <string name="btnTest">Enviar datos</string>
     <string name="saludo_usuario">Hola %1$s, bienvenido a la app</string>
     <string name="home_activity_main_message">Hola desde Home Activity</string>
