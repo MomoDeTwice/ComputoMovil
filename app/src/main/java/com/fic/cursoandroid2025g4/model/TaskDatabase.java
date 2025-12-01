@@ -6,17 +6,17 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Book.class},version = 1,exportSchema = false)
-public abstract class BookDatabase extends RoomDatabase {
-    private static BookDatabase INSTANCE;
-    public abstract BookDao bookDao();
+@Database(entities = {Task.class},version = 1,exportSchema = false)
+public abstract class TaskDatabase extends RoomDatabase {
+    private static TaskDatabase INSTANCE;
+    public abstract TaskDao taskDao();
 
-    public static synchronized BookDatabase getInstance(Context context){
+    public static synchronized TaskDatabase getInstance(Context context){
         if(INSTANCE == null){
             INSTANCE = Room.databaseBuilder(
                     context.getApplicationContext(),
-                    BookDatabase.class,
-                    "book_database"
+                    TaskDatabase.class,
+                    "task_database"
             ).allowMainThreadQueries().build();
         }
 

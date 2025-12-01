@@ -5,69 +5,91 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddBookActivity">
-
+    android:padding="16dp"
+    tools:context=".AddTaskActivity">
 
     <!-- Campo Título -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Título"
+        android:hint="Nombre de la tarea"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etTitle"
+            android:id="@+id/etTaskTittle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Campo Autor -->
+    <!-- Campo Descripción -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilAuthor"
+        android:id="@+id/tilDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Autor"
+        android:hint="Descripción de la tarea"
         app:layout_constraintTop_toBottomOf="@id/tilTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etAuthor"
+            android:id="@+id/etTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo Fecha Creación -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCreatedAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de creacion"
+        app:layout_constraintTop_toBottomOf="@id/tilDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCreatedAt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Spinner moderno -->
+    <!-- Campo Estado (Anteriormente Checkbox) -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilStatus"
+        android:id="@+id/tilIsCompleted"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Estado"
-        app:layout_constraintTop_toBottomOf="@id/tilAuthor"
+        android:hint="Se ha completado?"
+        app:layout_constraintTop_toBottomOf="@id/tilCreatedAt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
 
-        <Spinner
-            android:id="@+id/spStatus"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etIsCompleted"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:spinnerMode="dropdown" />
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Botón moderno -->
+    <!-- Botón Guardar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Guardar"
         style="@style/Widget.MaterialComponents.Button"
         app:cornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/tilStatus"
+        app:layout_constraintTop_toBottomOf="@+id/tilIsCompleted"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

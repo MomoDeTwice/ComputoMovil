@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="error_network">No se logró establecer conexión a internet.</string>
-
-
-    <string name="error_book_save">No fue posible almacenar los datos de un libro</string>
-    <string name="error_book_update">No fue posible modificar los datos de un libro</string>
-    <string name="error_book_delete">No fue posible eliminar los datos de un libro</string>
-</resources>

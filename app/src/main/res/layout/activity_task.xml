@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookActivity">
+    tools:context=".TaskActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvBooks"
+        android:id="@+id/rvTask"
         android:padding="8dp"
         android:background="@color/white"
         android:layout_width="match_parent"

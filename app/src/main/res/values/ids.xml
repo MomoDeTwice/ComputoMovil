@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etTaskTittle" type="id" />
+    <item name="etTaskDescription" type="id" />
+    <item name="etIsCompleted" type="id" />
+    <item name="etCreatedAt" type="id" />
+    <item name="fabAddTask" type="id" />
+    <item name="rvTask" type="id" />
+</resources>

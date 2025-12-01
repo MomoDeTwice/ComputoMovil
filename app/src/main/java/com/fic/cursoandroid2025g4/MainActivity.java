@@ -55,10 +55,12 @@ public class MainActivity extends AppCompatActivity {
             String email = etEmail.getText().toString().trim();
 
             if(validateForm(username,password,email)){
-                Toast.makeText(this, "Prueba exitosa", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Bienvenido " + username, Toast.LENGTH_SHORT).show();
+                // Redireccionar a TaskActivity (Listado de tareas)
+                Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+                startActivity(intent);
+                finish(); // Opcional: cerrar MainActivity para que no se pueda volver atrás al login
             }
-
-
         });
     }
 

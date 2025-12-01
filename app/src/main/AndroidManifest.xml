@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoAndroid2025G4">
         <activity
-            android:name=".AddBookActivity"
-            android:exported="false" />
+            android:name=".AddTaskActivity"
+            android:exported="false"
+            tools:ignore="MissingClass" />
         <!--
         <activity
             android:name=".BookActivity"
@@ -23,7 +24,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".BookActivity"
+            android:name=".TaskActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
