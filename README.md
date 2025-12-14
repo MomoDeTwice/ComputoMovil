@@ -15,6 +15,15 @@ Una aplicación añadida a una ya previamente existente de tareas, que te da tod
 9.-Seleccionar un dispositivo para ejecutar la aplicacion. 
 10.-Haz clic en el botón verde de Run.
 
+
+public void createAllTables(@NonNull final SQLiteConnection connection) {
+        SQLite.execSQL(connection, "CREATE TABLE IF NOT EXISTS `task` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `taskTittle` TEXT, `taskDescription` TEXT, `createdAt` TEXT, `isCompleted` TEXT)");
+        SQLite.execSQL(connection, "CREATE TABLE IF NOT EXISTS `history` (`history_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `accion` TEXT, `created_At` TEXT, `details` TEXT)");
+        SQLite.execSQL(connection, "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
+        SQLite.execSQL(connection, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '714d39019566af5bea01b94c10dd63e9')");
+      }
+      
+
 <img width="406" height="895" alt="Captura de pantalla 2025-12-14 153201" src="https://github.com/user-attachments/assets/2324150b-02f1-4f3c-ba55-971b05937d6b" />
 <img width="402" height="889" alt="Captura de pantalla 2025-12-14 153502" src="https://github.com/user-attachments/assets/730c8f20-271e-424f-817f-e10edafa4d55" />
 <img width="401" height="884" alt="Captura de pantalla 2025-12-14 153227" src="https://github.com/user-attachments/assets/a65c8a30-9bbf-43fb-9f36-ebe993a75766" />
