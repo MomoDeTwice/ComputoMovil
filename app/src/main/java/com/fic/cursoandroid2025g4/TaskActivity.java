@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.fic.cursoandroid2025g4.controller.TaskController;
 import com.fic.cursoandroid2025g4.model.Task;
+import com.fic.cursoandroid2025g4.view.HistoryActivity;
 import com.fic.cursoandroid2025g4.view.TaskAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -66,6 +67,11 @@ public class TaskActivity extends AppCompatActivity {
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) 
         FloatingActionButton fabAddBook = findViewById(R.id.fabAddBook);
         fabAddBook.setOnClickListener(view -> showAddTaskActivity());
+
+        // Botón para ir al Historial
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
+        FloatingActionButton fabHistory = findViewById(R.id.fabHistory);
+        fabHistory.setOnClickListener(view -> showHistoryActivity());
     }
 
     @Override
@@ -108,5 +114,10 @@ public class TaskActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("Cancelar", null)
                 .show();
+    }
+
+    private void showHistoryActivity() {
+        Intent intent = new Intent(TaskActivity.this, HistoryActivity.class);
+        startActivity(intent);
     }
 }

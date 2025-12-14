@@ -14,18 +14,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddBook"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Agregar Libro"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/black"
-        app:tint="@android:color/white"
+        android:orientation="vertical"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
-        />
+        android:gravity="end">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Ver Historial"
+            android:src="@android:drawable/ic_menu_recent_history"
+            app:backgroundTint="@color/black"
+            app:tint="@android:color/white"
+            android:layout_marginBottom="16dp"
+            app:fabSize="mini"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Agregar Tarea"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="@color/black"
+            app:tint="@android:color/white"
+            />
+    </LinearLayout>
 
 
 
